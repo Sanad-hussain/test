@@ -1,0 +1,61 @@
+Please specify --site sitename
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230614_233009-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-14 23:30:11.168198
+Config  : ./besto_insurance.com/private/backups/20230614_233009-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230614_233009-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230615_053010-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-15 05:30:12.137192
+Config  : ./besto_insurance.com/private/backups/20230615_053010-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230615_053010-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230615_113006-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-15 11:30:10.960468
+Config  : ./besto_insurance.com/private/backups/20230615_113006-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230615_113006-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230615_173004-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-15 17:30:09.439571
+Config  : ./besto_insurance.com/private/backups/20230615_173004-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230615_173004-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230615_233003-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-15 23:30:06.385064
+Config  : ./besto_insurance.com/private/backups/20230615_233003-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230615_233003-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230616_053003-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-16 05:30:05.955056
+Config  : ./besto_insurance.com/private/backups/20230616_053003-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230616_053003-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230616_113004-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-16 11:30:07.756981
+Config  : ./besto_insurance.com/private/backups/20230616_113004-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230616_113004-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230616_173003-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-16 17:30:05.862956
+Config  : ./besto_insurance.com/private/backups/20230616_173003-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230616_173003-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230616_233005-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-16 23:30:09.790140
+Config  : ./besto_insurance.com/private/backups/20230616_233005-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230616_233005-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _43bbb95648243ff8 -p********** _43bbb95648243ff8 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./besto_insurance.com/private/backups/20230617_053004-besto_insurance_com-database.sql.gz
+
+Backup Summary for besto_insurance.com at 2023-06-17 05:30:07.662702
+Config  : ./besto_insurance.com/private/backups/20230617_053004-besto_insurance_com-site_config_backup.json 94.0B
+Database: ./besto_insurance.com/private/backups/20230617_053004-besto_insurance_com-database.sql.gz         1.1MiB
+Backup for Site besto_insurance.com has been successfully completed

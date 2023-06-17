@@ -1,0 +1,109 @@
+2023-06-14 11:38:35,357 DEBUG cd frappe-bench && python3 -m venv env
+2023-06-14 11:38:39,228 DEBUG cd frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-06-14 11:38:41,910 DEBUG cd frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-06-14 11:38:43,281 LOG Getting frappe
+2023-06-14 11:38:43,281 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-06-14 11:38:45,590 LOG Installing frappe
+2023-06-14 11:38:45,590 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/frappe 
+2023-06-14 11:39:51,227 DEBUG cd /home/ubuntu/frappe-bench/apps/frappe && yarn install
+2023-06-14 11:40:42,702 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-14 11:40:42,703 DEBUG cd frappe-bench && bench build
+2023-06-14 11:40:42,856 INFO /usr/local/bin/bench build
+2023-06-14 11:41:17,026 LOG setting up backups
+2023-06-14 11:41:17,049 LOG backups were set up
+2023-06-14 11:41:17,049 INFO Bench frappe-bench initialized
+2023-06-14 12:00:03,255 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-14 12:28:59,842 INFO /usr/local/bin/bench start
+2023-06-14 12:29:00,950 INFO /usr/local/bin/bench worker
+2023-06-14 12:29:00,954 INFO /usr/local/bin/bench schedule
+2023-06-14 12:29:00,957 INFO /usr/local/bin/bench serve --port 8000
+2023-06-14 12:29:00,960 INFO /usr/local/bin/bench watch
+2023-06-14 12:30:24,243 INFO /usr/local/bin/bench new-site besto_insurance.com
+2023-06-14 12:31:55,913 INFO /usr/local/bin/bench use besto_insurance.com
+2023-06-14 12:34:20,765 INFO /usr/local/bin/bench start
+2023-06-14 12:34:21,802 INFO /usr/local/bin/bench schedule
+2023-06-14 12:34:21,805 INFO /usr/local/bin/bench serve --port 8000
+2023-06-14 12:34:21,819 INFO /usr/local/bin/bench worker
+2023-06-14 12:34:21,812 INFO /usr/local/bin/bench watch
+2023-06-14 12:42:13,209 INFO /usr/local/bin/bench get-app payments
+2023-06-14 12:42:13,536 LOG Getting payments
+2023-06-14 12:42:13,536 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2023-06-14 12:42:14,238 LOG Installing payments
+2023-06-14 12:42:14,437 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/payments 
+2023-06-14 12:42:19,324 DEBUG bench build --app payments
+2023-06-14 12:42:19,453 INFO /usr/local/bin/bench build --app payments
+2023-06-14 12:42:22,627 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-14 12:43:43,534 INFO /usr/local/bin/bench get-app erpnext --branch version-14
+2023-06-14 12:43:43,795 LOG Getting erpnext
+2023-06-14 12:43:43,795 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2023-06-14 12:43:49,401 LOG Installing erpnext
+2023-06-14 12:43:49,549 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/erpnext 
+2023-06-14 12:44:27,506 DEBUG cd /home/ubuntu/frappe-bench/apps/erpnext && yarn install
+2023-06-14 12:44:29,119 DEBUG bench build --app erpnext
+2023-06-14 12:44:29,245 INFO /usr/local/bin/bench build --app erpnext
+2023-06-14 12:44:38,161 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-14 12:45:21,134 INFO /usr/local/bin/bench --site besto_insurance.com install-app erpnext
+2023-06-14 12:47:27,736 INFO /usr/local/bin/bench start
+2023-06-14 12:47:28,678 INFO /usr/local/bin/bench watch
+2023-06-14 12:47:28,684 INFO /usr/local/bin/bench serve --port 8000
+2023-06-14 12:47:28,689 INFO /usr/local/bin/bench worker
+2023-06-14 12:47:28,694 INFO /usr/local/bin/bench schedule
+2023-06-14 12:47:42,418 INFO /usr/local/bin/bench --site besto_insurance.com install-app erpnext
+2023-06-14 12:52:27,313 INFO /usr/local/bin/bench --site besto_insurance.com install-app erpnext
+2023-06-14 13:18:10,417 INFO /usr/local/bin/bench new-app besto_insurance
+2023-06-14 13:18:10,428 LOG creating new app besto_insurance
+2023-06-14 13:18:47,258 LOG Installing besto_insurance
+2023-06-14 13:18:47,261 DEBUG cd /home/ubuntu/frappe-bench && /home/ubuntu/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ubuntu/frappe-bench/apps/besto_insurance 
+2023-06-14 13:18:49,595 DEBUG bench build --app besto_insurance
+2023-06-14 13:18:49,725 INFO /usr/local/bin/bench build --app besto_insurance
+2023-06-14 13:18:53,999 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-06-14 13:23:13,907 INFO /usr/local/bin/bench build --app besto_insurance
+2023-06-14 13:26:21,717 INFO /usr/local/bin/bench --site besto_insurance.com install-app besto_insurance
+2023-06-14 13:27:53,236 INFO /usr/local/bin/bench --site besto_insurance.com list-apps
+2023-06-14 13:52:04,679 INFO /usr/local/bin/bench start
+2023-06-14 13:52:05,773 INFO /usr/local/bin/bench serve --port 8000
+2023-06-14 13:52:05,782 INFO /usr/local/bin/bench schedule
+2023-06-14 13:52:05,778 INFO /usr/local/bin/bench watch
+2023-06-14 13:52:05,786 INFO /usr/local/bin/bench worker
+2023-06-14 18:00:03,845 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-15 00:00:04,254 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-15 05:50:02,381 INFO /usr/local/bin/bench set-config -g developer_mode true
+2023-06-15 05:50:23,012 INFO /usr/local/bin/bench start
+2023-06-15 05:50:24,202 INFO /usr/local/bin/bench worker
+2023-06-15 05:50:24,204 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 05:50:24,209 INFO /usr/local/bin/bench schedule
+2023-06-15 05:50:24,211 INFO /usr/local/bin/bench watch
+2023-06-15 06:00:02,677 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-15 06:05:49,546 INFO /usr/local/bin/bench start
+2023-06-15 06:05:50,470 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 06:05:50,487 INFO /usr/local/bin/bench watch
+2023-06-15 06:05:50,496 INFO /usr/local/bin/bench schedule
+2023-06-15 06:05:50,500 INFO /usr/local/bin/bench worker
+2023-06-15 08:51:21,304 INFO /usr/local/bin/bench start
+2023-06-15 08:52:55,011 INFO /usr/local/bin/bench start
+2023-06-15 08:52:56,187 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 08:52:56,189 INFO /usr/local/bin/bench schedule
+2023-06-15 08:52:56,186 INFO /usr/local/bin/bench watch
+2023-06-15 08:52:56,190 INFO /usr/local/bin/bench worker
+2023-06-15 09:16:17,164 INFO /usr/local/bin/bench start
+2023-06-15 09:16:18,213 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 09:16:18,236 INFO /usr/local/bin/bench worker
+2023-06-15 09:16:18,239 INFO /usr/local/bin/bench watch
+2023-06-15 09:16:18,241 INFO /usr/local/bin/bench schedule
+2023-06-15 09:23:15,739 INFO /usr/local/bin/bench start
+2023-06-15 09:23:16,863 INFO /usr/local/bin/bench schedule
+2023-06-15 09:23:16,865 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 09:23:16,866 INFO /usr/local/bin/bench watch
+2023-06-15 09:23:16,867 INFO /usr/local/bin/bench worker
+2023-06-15 09:41:36,737 INFO /usr/local/bin/bench start
+2023-06-15 09:41:37,826 INFO /usr/local/bin/bench serve --port 8000
+2023-06-15 09:41:37,835 INFO /usr/local/bin/bench watch
+2023-06-15 09:41:37,839 INFO /usr/local/bin/bench worker
+2023-06-15 09:41:37,834 INFO /usr/local/bin/bench schedule
+2023-06-15 12:00:01,825 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-15 18:00:01,284 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-16 00:00:01,584 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-16 06:00:01,648 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-16 12:00:01,431 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-16 18:00:01,345 INFO /usr/local/bin/bench --verbose --site all backup
+2023-06-17 00:00:01,333 INFO /usr/local/bin/bench --verbose --site all backup

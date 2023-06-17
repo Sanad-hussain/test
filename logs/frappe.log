@@ -1,0 +1,49 @@
+2023-06-14 13:12:23,804 ERROR frappe Could not take error snapshot: characters_written
+Site: besto_insurance.com
+Form Dict: {'args': '{"language":"English","country":"India","timezone":"Asia/Kolkata","currency":"INR","enable_telemetry":1,"full_name":"sanad hussain","email":"sanadhussain25@gmail.com","password":"Sana9d google","company_name":"besto insurance","company_abbr":"BI","chart_of_accounts":"India - Chart of Accounts","fy_start_date":"2023-04-01","fy_end_date":"2024-03-31"}', 'cmd': 'frappe.desk.page.setup_wizard.setup_wizard.setup_complete'}
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/app.py", line 66, in application
+    response = frappe.api.handle()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/api.py", line 54, in handle
+    return frappe.handler.handle()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/handler.py", line 47, in handle
+    data = execute_cmd(cmd)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/handler.py", line 85, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/__init__.py", line 1608, in call
+    return fn(*args, **newargs)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 62, in setup_complete
+    return process_setup_stages(stages, args)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 93, in process_setup_stages
+    run_setup_success(user_input)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/setup_wizard.py", line 121, in run_setup_success
+    install_fixtures.install()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/desk/page/setup_wizard/install_fixtures.py", line 16, in install
+    sync_dashboards()
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/dashboard.py", line 92, in sync_dashboards
+    print(f"Updating Dashboard for {app_name}")
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/error.py", line 48, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/ubuntu/frappe-bench/apps/frappe/frappe/utils/error.py", line 141, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2023-06-14 13:26:47,277 ERROR frappe New Exception collected with id: 2023-06-14 13:26:47.263221-127.0.0.1-214
+Site: besto_insurance.com
+Form Dict: {}
+2023-06-14 13:26:57,345 ERROR frappe New Exception collected with id: 2023-06-14 13:26:57.331827-127.0.0.1-946
+Site: besto_insurance.com
+Form Dict: {}
+2023-06-14 13:28:02,349 ERROR frappe New Exception collected with id: 2023-06-14 13:28:02.306401-127.0.0.1-55a
+Site: besto_insurance.com
+Form Dict: {}
+2023-06-15 06:07:37,982 ERROR frappe New Exception collected with id: 2023-06-15 06:07:37.728909-127.0.0.1-197
+Site: besto_insurance.com
+Form Dict: {'user': 'Administrator'}
+2023-06-15 10:32:36,932 ERROR frappe New Exception collected with id: 2023-06-15 10:32:36.854896-127.0.0.1-61e
+Site: besto_insurance.com
+Form Dict: {'doctype': 'List of business', 'fields': '["`tabList of business`.`name`","`tabList of business`.`owner`","`tabList of business`.`creation`","`tabList of business`.`modified`","`tabList of business`.`modified_by`","`tabList of business`.`_user_tags`","`tabList of business`.`_comments`","`tabList of business`.`_assign`","`tabList of business`.`_liked_by`","`tabList of business`.`docstatus`","`tabList of business`.`idx`"]', 'filters': '[]', 'order_by': '`tabList of business`.`modified` DESC', 'start': '0', 'page_length': '20', 'view': 'List', 'group_by': '`tabList of business`.`name`', 'with_comment_count': 'true', 'cmd': 'frappe.desk.reportview.get'}
